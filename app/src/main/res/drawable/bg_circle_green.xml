@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:startColor="@color/lime_600"
+                android:endColor="#00000000"
+                android:gradientRadius="50%"
+                android:type="radial"
+                />
+        </shape>
+    </item>
+    <item
+        android:top="@dimen/magnitude_dot_shadow"
+        android:left="@dimen/magnitude_dot_shadow"
+        android:right="@dimen/magnitude_dot_shadow"
+        android:bottom="@dimen/magnitude_dot_shadow">
+        <shape android:shape="oval">
+            <size android:width="55dp"
+                android:height="55dp"/>
+            <solid android:color="@color/lime_600" />
+        </shape>
+    </item>
+</layer-list>
