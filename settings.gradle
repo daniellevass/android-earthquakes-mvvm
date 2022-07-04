@@ -4,6 +4,13 @@ pluginManagement {
         google()
         mavenCentral()
     }
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.id.startsWith("com.dicedmelon.gradle.jacoco-android")) {
+                useModule("com.dicedmelon.gradle:jacoco-android:0.1.5")
+            }
+        }
+    }
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
